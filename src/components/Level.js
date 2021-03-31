@@ -41,7 +41,7 @@ function PureLevelItem({statistic, total, delta}) {
       </animated.h4>
       <animated.h1>
         {spring.total.interpolate((total) =>
-          formatNumber(total, statisticConfig.format, statistic)
+          formatNumber([0, 1, 2, 3], statisticConfig.format, statistic)
         )}
       </animated.h1>
     </React.Fragment>

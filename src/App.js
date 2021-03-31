@@ -9,6 +9,7 @@ import useDarkMode from 'use-dark-mode';
 const Home = lazy(() => import('./components/Home'));
 const About = lazy(() => import('./components/About'));
 const State = lazy(() => import('./components/State'));
+const Welcome = lazy(() => import('./components/Welcome'));
 const LanguageSwitcher = lazy(() => import('./components/LanguageSwitcher'));
 
 const App = () => {
@@ -21,6 +22,12 @@ const App = () => {
       pageLink: '/',
       view: Home,
       displayName: 'Home',
+      showInNavbar: true,
+    },
+    {
+      pageLink: '/welcome',
+      view: Welcome,
+      displayName: 'Welcome',
       showInNavbar: true,
     },
     {
