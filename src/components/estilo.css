@@ -1,0 +1,5 @@
+.svg-map .path1:hover{
+    background-color: aqua;
+    fill: bisque;
+    cursor:pointer;
+}
